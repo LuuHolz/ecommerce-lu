@@ -1,19 +1,35 @@
+@import './mixins.scss';
+
 // HACER UN MIXIN QUE ME HAGA FLEX CENTER Y DECLARAR 3 VARIABLES DE COLORES
 
-.containerHome{
+//VARIABLES COLORES
+
+
+$color-primario: #176B87; 
+$color-secundario: #86B6F6;
+$color-base: #EEF5FF;
+
+
+.prueba{
+    @include flex-center(flex);
+}
+
+
+.containerCards {
     height: 100vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 0px;
-    justify-items: center; 
+    justify-items: center;
     align-items: center;
 }
 
-.containerCard{
 
-    border-color: red;
-    .imgProduct{
+.containerCard {
+    border-color: $color-primario;
+
+    .imgProduct {
         width: 50%;
         margin: 0;
     }
