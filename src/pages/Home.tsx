@@ -25,10 +25,8 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <div>
-        <NavbarHome />
-      </div>
+    <div className='container'>
+              <NavbarHome />
 
       <div className="containerCards">
         {isLoading ? (

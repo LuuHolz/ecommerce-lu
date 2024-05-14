@@ -14,9 +14,19 @@ $color-base: #EEF5FF;
     @include flex-center(flex);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
 
 .containerCards {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
